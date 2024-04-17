@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HelpHub Charity Profiles</title>
+        <link rel="stylesheet" href="charityStyles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <nav>
+            <a href="index.HTML">Home</a></li>
+            <a href="charities.HTML">Charities</a></li>
+            <a href="charity_profile.HTML">Charity Profiles</a></li>
+            <a href="api.html">Volunteer API</a></li>
+        </nav>
+    </head>
+    <main></main>
+    <body class="body">
+        <header class="header">
+            <h1>Charity Profiles</h1>
+            <p>Here you will find profiles for all of our charities. You can also use this page to submit volunteer applications!</p>
+        </header>
+        <section>
+            <h2 class="h2"><a href="https://www.reflectionsofgrace.org/">Reflections of Grace</a></h2>
+            <img class="image1" src="reflectionsofgrace.svg" alt="reflectionsofgrace">
+            <p>Reflections Of Grace Foundation is dedicated to
+                providing financial, emotional, and educational support for children and their families affected by pediatric brain cancer,
+                raising awareness of all types of pediatric brain tumors, with a particular focus on Diffuse Intrinsic Pontine Gliomas (DIPGs), or Brainstem Gliomas, and
+                joining with other like-minded organizations in educating, aiding and funding the search for a cure for DIPG and other forms of pediatric brain cancer, in the hope of curing all cancers.</p>
+                <button id="volunteerButton" class="button" onclick="toggleForm()">Volunteer</button>
+        </section>
+        <section>
+            <h2 class="h2"><a href="https://www.alexslemonade.org/">Alex's Lemonade Stand</a></h2>
+            <img class="image2" src="alexslemonade.jpg" alt="alexslemonade">
+            <p>Alex's Lemonade Stand Foundation (ALSF) is changing the lives of children with cancer by funding impactful research, 
+                raising awareness, supporting families and empowering everyone to help cure childhood cancer.</p>
+                <button id="volunteerButton" class="button" onclick="toggleForm()">Volunteer</button>
+        </section>
+        <section>
+            <h2 class="h2"><a href="https://www.humanesociety.org/how-you-can-help">The Humane Society</a></h2>
+            <img class="image3" src="humanesociety.jpg" alt="humanesociety">
+            <p>The Humane Society of the United States is the nation's most effective animal protection organization. 
+                With you by our side, we take on the big fights to end suffering for all animals.</p>
+                <button id="volunteerButton" class="button" onclick="toggleForm()">Volunteer</button>
+        </section>
+        <form id="volunteerForm" style="display: none;">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+                        
+            <input type="submit" value="Submit">
+        </form>
+        <script src="charity_profile.js"></script>
+    </body>
+    <footer class="footer">
+        <p>HelpHub.com Copyright 2024.</p>
+    </footer>
+</html>

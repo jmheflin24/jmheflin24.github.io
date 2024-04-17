@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volunteer Map API</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtHHWxK198J7PMIYMlS54OScsqd32svls&callback=initMap" async defer></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+        <nav>
+            <a href="index.HTML">Home</a></li>
+            <a href="charities.HTML">Charities</a></li>
+            <a href="charity_profile.HTML">Charity Profiles</a></li>
+            <a href="api.html">Volunteer API</a></li>
+        </nav>
+    </head>
+    
+    <body class="body">
+        <h2 class="h2">Volunteer Finder API</h1>
+            <p>Here, you can look around your location to find charities near you!</p>
+            <div id="map"></div>
+            <script src="charity_api.js"></script>
+    </body>
+</html>
